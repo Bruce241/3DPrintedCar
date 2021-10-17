@@ -1,0 +1,16 @@
+#include "variables.h"
+
+//Controller stuff
+Controller master(CONTROLLER_MASTER);
+
+//Ports stuff
+const int8_t LEFT_FRONT_DRIVE_PORT = 1;
+const int8_t LEFT_BACK_DRIVE_PORT = 2;
+const int8_t RIGHT_FRONT_DRIVE_PORT = 3;
+const int8_t RIGHT_BACK_DRIVE_PORT = 4;
+
+//Motors stuff
+Motor driveFL(LEFT_FRONT_DRIVE_PORT, MOTOR_GEARSET_18, false, MOTOR_ENCODER_DEGREES);
+Motor driveBL(LEFT_BACK_DRIVE_PORT, MOTOR_GEARSET_18, false, MOTOR_ENCODER_DEGREES);
+Motor driveFR(RIGHT_FRONT_DRIVE_PORT, MOTOR_GEARSET_18, true, MOTOR_ENCODER_DEGREES);
+Motor driveBR(RIGHT_BACK_DRIVE_PORT, MOTOR_GEARSET_18, true, MOTOR_ENCODER_DEGREES);
